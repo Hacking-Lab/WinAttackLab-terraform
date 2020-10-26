@@ -15,7 +15,7 @@
 
 <body>
     <nav class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">WinAttackLab</a>
+        <span class="navbar-brand col-md-3 col-lg-2 mr-0 px-3">WinAttackLab</span>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
             data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
                 <div class="sidebar-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link" href="?tool=Deploy">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-send">
@@ -39,7 +39,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="?tool=Destroy">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-target">
@@ -51,7 +51,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="?tool=Log">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-align-justify">
@@ -64,7 +64,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="?tool=IP%20Addresses">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-hexagon">
@@ -81,26 +81,12 @@
             <div class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Deploy</h1>
+                    <h1 class="h2">WinAttackLab</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Refresh</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Refresh</button>
                     </div>
                 </div>
-                <pre class="pre-scrollable"><code>Oct 26 04:33:04 hlkali lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm by (uid=0)​
-Oct 26 04:33:04 hlkali systemd-logind[583]: New session c2 of user lightdm.​
-Oct 26 04:33:04 hlkali systemd: pam_unix(systemd-user:session): session opened for user lightdm by (uid=0)​
-Oct 26 04:33:11 hlkali lightdm: pam_unix(lightdm:auth): Couldn't open /etc/securetty: No such file or directory​
-Oct 26 04:33:12 hlkali lightdm: pam_unix(lightdm:auth): Couldn't open /etc/securetty: No such file or directory​
-Oct 26 04:33:12 hlkali lightdm: gkr-pam: unable to locate daemon control file​
-Oct 26 04:33:12 hlkali lightdm: gkr-pam: stashed password to try later in open session​
-Oct 26 04:33:12 hlkali lightdm: pam_unix(lightdm-greeter:session): session closed for user lightdm​
-Oct 26 04:33:12 hlkali systemd-logind[583]: Removed session c2.​
-Oct 26 04:33:12 hlkali lightdm: pam_unix(lightdm:session): session opened for user hacker by (uid=0)​
-Oct 26 04:33:12 hlkali systemd-logind[583]: New session 28 of user hacker.​
-Oct 26 04:33:12 hlkali lightdm: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring​
-Oct 26 04:33:12 hlkali sudo: hacker : TTY=unknown ; PWD=/home/hacker ; USER=root ; COMMAND=/usr/bin/rm
-/usr/share/desktop-base/kali-theme/login/background​
-Oct 26 04:33:12 hlkali sudo: pam_unix(sudo:session): session opened for user root by (uid=0)</code></pre>
+                <pre class="pre-scrollable"><code id="shell"></code></pre>
             </div>
         </div>
     </div>
